@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     //Problema: Separar Bebidas
     /*
@@ -7,10 +8,17 @@
     */
 
     //Entrada
-
+    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"]
+    let paraMenores = [];
 
     //Processamento
-
+    for (n of bebidas) {
+        álcool = prompt(`Digite se ${n} possui álcool: `).toUpperCase();
+        if (álcool == 'N'|| álcool == 'NÃO') {
+            paraMenores.push(n);
+        } 
+    }
+    alert(paraMenores);
 
     //Saída
 

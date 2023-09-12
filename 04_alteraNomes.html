@@ -8,9 +8,20 @@
     */
 
     //Entrada
-
+    let nomes = ["Hilário", "Rafaela", "José", "Bárbara", "Fábio", "Júlia"];
+    let novosNomes = [];
 
     //Processamento
+   for (n of nomes) {
+        n = n.replace('á', 'a');
+        n = n.replace('é', 'e');
+        n = n.replace('ú', 'u');
+        novosNomes.push(n);
+   }
+   alert(novosNomes);
+   
+    
+
 
 
     //Saída

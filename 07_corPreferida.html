@@ -8,11 +8,17 @@
     */
 
     //Entrada
-
+    let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"]
+    let gosta = [];
 
     //Processamento
-
-
+    for (n of cores) {
+        let pergunta = prompt(`Digite se você gosta da cor ${n}`).toUpperCase();
+        if (pergunta == 'S' || pergunta == 'SIM') {
+            gosta.push(n);
+        }
+    }
+    alert(gosta);
     //Saída
 
 </script>

@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     //Problema: Identificar Caracteres
     /*
@@ -6,11 +7,21 @@
     */
 
     //Entrada
-
-
+    let palavra = prompt('Digite uma palavra: ').trim().toUpperCase();
+    let fatia = palavra.slice();
+    let vogais = [];
+    i = 0 
+    c = 0
     //Processamento
-
-
+    for (n of fatia) {
+        if (n == 'A' || n == 'E' || n == 'I' || n == 'O' || n == 'U') {
+            i++;
+        }
+        else {
+            c++; //Trocadilho
+        }
+    }
+    alert(`Na palavra ${palavra}, há ${i} vogaL(is) e ${c} consoante(s)`);
     //Saída
 
 </script>
