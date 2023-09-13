@@ -8,11 +8,49 @@
     */
 
     //Entrada
-
+    let cidades = ["Porto Alegre", "Curitiba", "Florianópolis", "Joinville", "Blumenau", "Gramado", "Santa Maria", "Londrina", "Itajaí"];
+    let pr = [];
+    let sc = [];
+    let rs = [];
 
     //Processamento
 
-
-    //Saída
+    for (n of cidades) {
+        pergunta = prompt(`Digite à sigla do estado que a cidade ${n} pertence: `).trim().toUpperCase();
+        switch (pergunta) {
+            case 'SC':
+                sc.push(n);
+                    break;
+            case 'RS':
+                rs.push(n);
+                    break;
+            case 'PR':
+                pr.push(n);
+                    break;
+            default:
+                alert('A geografia é uma material interessante de estudar');
+                    break;
+        }
+    }
+    if (sc.length >= pr.length && sc.length >= rs.length) {
+        if (rs.length >= pr.length)
+            alert(`As cidades de Santa Catarina são: ${sc}\nAs cidades o Rio Grande do Sul são: ${rs}\nAs cidades do Paraná são ${pr}`);
+        else {
+            alert(`As cidades de Santa Catarina são: ${sc}\nAs cidades o Paraná são: ${pr}\nAs cidades do Rio Grande do Sul são ${rs}`);
+        }
+    }
+    else if (pr.length > sc.length && pr.length >= rs.length) {
+        if (sc.length >= rs.length) {
+            alert(`As cidades do Paraná são: ${pr}\nAs cidades de Santa Catarina são: ${sc}\nAs cidades de do Rio Grande do Sul são: ${rs}`);
+        }
+    }
+    else {
+        if (pr.length > sc.length) {
+            alert(`As cidades do Rio Grande do Sul são: ${rs}\nAs cidades do Paraná são: ${pr}\nAs cidades de Santa Catarina são: ${sc}`)
+        }
+        else {
+            alert(`As cidades do Rio Grande do Sul são: ${rs}\nAs cidades de Santa Catarina são: ${sc}\nAs cidades do Paraná são: ${pr}`);
+        }
+    }
 
 </script>
