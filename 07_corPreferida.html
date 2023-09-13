@@ -10,7 +10,7 @@
     //Entrada
     let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"]
     let gosta = [];
-
+    
     //Processamento
     for (n of cores) {
         let pergunta = prompt(`Digite se você gosta da cor ${n}`).toUpperCase();
@@ -18,7 +18,7 @@
             gosta.push(n);
         }
     }
-    alert(gosta);
+    alert(`As sua cores preferidas são ${gosta} e o total delas é ${gosta.length}`);
     //Saída
 
 </script>

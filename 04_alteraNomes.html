@@ -13,9 +13,7 @@
 
     //Processamento
    for (n of nomes) {
-        n = n.replace('á', 'a');
-        n = n.replace('é', 'e');
-        n = n.replace('ú', 'u');
+        n = n.replace('á', 'a').replace('é', 'e').replace('ú', 'u');
         novosNomes.push(n);
    }
    alert(novosNomes);
